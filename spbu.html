@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://garimahdi.github.io/subur_mockup_design/css/app_styling.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Desain</title>
+    <title>spbu</title>
 </head>
 <body>
     <img src="https://garimahdi.github.io/subur_mockup_design/Media/subur_header.png">
     <div class="homeMenu">
-        <strong>Konfigurasi Scan</strong>
+        <strong>SPBU</strong>
         <br>
         <br>
         <form class="form">
             <table>
                 <tr>
                     <td class="label_spacing">
-                        <label for="tanggal" class="label">Date</label>
+                        <label for="tanggal" class="label">Document Date</label>
                     </td>
                     <td class="tab_spacing">
                         <select id="tanggal" class="ddl_width">
@@ -96,15 +96,24 @@
                             <option value="npwp">NPWP</option>
                             <option value="aktaPendirian">Akta pendirian perusahaan</option>
                             <option value="docDepos">Dokumen deposito</option>
+                            <option value="others">Lainnya</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td class="label_spacing">
-                        <label for="doc_number">Nomor Dokumen</label>
+                        <label for="doc_number">No/Keterangan Dokumen</label>
                     </td>
                     <td class="tab_spacing" colspan="2">
                         <input type=text placeholder="Masukkan nomor dokumen" class="input_styling"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label_spacing">
+                        <label for="other_doc">Jenis Lainnya</label>
+                    </td>
+                    <td class="tab_spacing" colspan="2">
+                        <input type="text" placeholder="Jenis dokumen lainnya" class="input_styling"/>
                     </td>
                 </tr>
             </table>
