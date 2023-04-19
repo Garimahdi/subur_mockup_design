@@ -3,6 +3,14 @@ let getAnno = document.getElementById('anno');
 let getDate = new Date().getFullYear();
 getAnno.innerHTML = getDate.toString();
 
+// Get current date in the dropdown
+let today = new Date();
+let dd = today.getDate();
+let mm = today.getMonth();
+$('#tanggal[value='+dd+']').prop('selected',true)
+$('#bulan[value='+(mm+1)+']').prop('selected',true)
+$('#tahun[value='+getDate+']').prop('selected',true)
+
 // Set a logic to adjust date
 
 let tanggal = $('#tanggal');
